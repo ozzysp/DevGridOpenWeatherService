@@ -4,6 +4,8 @@ import requests
 import json
 import humanize
 import datetime
+import threading
+import user_crud
 
 # This are a global variables with the Cities ID's.
 CITIES_IDS = {
@@ -60,6 +62,7 @@ def json_write(x):
     with open('information.json', 'w') as json_file:
         json.dump(x, json_file, indent=4, ensure_ascii=False)
 
+
 # This function reads the json file
 def json_read():
     with open('information.json') as information:
@@ -67,7 +70,9 @@ def json_read():
     return data
 
 
-run_cities_ids()
+# This function get user id from user_crud.py
+def get_user_id(user_id):
+    return user_id
 
 
-
+threading.Thread(target=run_cities_ids).start()
