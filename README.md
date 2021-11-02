@@ -34,3 +34,28 @@ To install this project, you must follow the instructions below on your terminal
 
     navigate to http://localhost:8000/
 
+
+
+# Decisions about the project:
+
+
+When I started this project, I was thinking about the following:
+
+   To reach the goal of this project, I must create a service that will collect data from Open Weather Map and store this data as JSON file.
+   
+So, I decide to build a main file with the following structure:
+   
+Requests library is used to make the request to Open Weather Map.
+   
+The data is stored in a JSON file.
+   
+The data is converted to human readable format with the help of the library humanize.
+   
+To make multiple requests to Open Weather Map, the library used is threading.
+   
+To register the date and time of the request, the library used is datetime.
+
+To create a CRUD application, the library used is Django.
+   
+To create a database, the standard library used in Django SQLite.
+   
