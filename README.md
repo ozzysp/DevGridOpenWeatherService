@@ -28,5 +28,9 @@ To install this project you must follow the instructions below on your terminal:
  
 5. run the application:
 
-    python app.py
+    python3 manage.py runserver
+
+6. Launch your browser:
+
+    navigate to http://localhost:8000/
 
