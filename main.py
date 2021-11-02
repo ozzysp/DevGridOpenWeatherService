@@ -1,11 +1,12 @@
 # This project was created by: Ozzy
 # This project was created on: 11/12/2019
+
 import requests
 import json
 import humanize
 import datetime
 import threading
-import user_crud
+
 
 # This are a global variables with the Cities ID's.
 CITIES_IDS = {
