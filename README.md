@@ -8,7 +8,7 @@ For this project have be a service to run as a back end software which collect d
 
 Start here:
 
-To install this project you must follow the instructions below on your terminal:
+To install this project, you must follow the instructions below on your terminal:
 
 1. Clone the repository:
 
